@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Patient Appointment System</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--Tittle-->
+    <header id="blue">
+      <div class="logo">
+        <h1 class="logoh" style="font-size: 34px">Healing Haven Clinic</h1>
+      </div>
+      <nav>
+        <ul class="head-page">
+          <li><a href="#Register">Register</a></li>
+          <li><a href="#Login">Login</a></li>
+          <li><a href="#DoctorProfile">Doctor Profile</a></li>
+          <li><a href="#AppointmentSchedule">Appointment Schedule</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Registration Form -->
+    <div id="Register">
+      <h2>Register</h2>
+
+      <form id="register-form">
+        <input type="text" id="name" placeholder="Name" required /><br />
+
+        <input type="email" id="email" placeholder="Email" required /><br />
+
+        <input type="text" id="phone" placeholder="Phone" required /><br />
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required
+        /><br />
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <!-- Login Form -->
+    <div id="Login">
+      <h2>Login</h2>
+
+      <form id="login-form">
+        <input
+          type="email"
+          id="login-email"
+          placeholder="Email"
+          required
+        /><br />
+
+        <input
+          type="password"
+          id="login-password"
+          placeholder="Password"
+          required
+        /><br />
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <!-- Display Doctors -->
+    <div id="DoctorProfile">
+      <section id="team" class="section container">
+        <h2 class="section-title" style="text-align: center">
+          Doctor Profiles / Available Doctors
+        </h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <img
+              src="image\icon 1.png"
+              alt="Shivam"
+              height="50px"
+              width="50px"
+            />
+            <h3>Dr.Shivam</h3>
+            <p>General Physicians</p>
+            <p>Available Time: Mon - Sat</p>
+
+            <p>10:00AM - 7:00PM</p>
+          </div>
+          <div class="team-card">
+            <img
+              src="image\icon 2.png"
+              alt="Ankit Gupta"
+              height="50px"
+              width="50px"
+            />
+            <h3>Dr.Ankit Gupta</h3>
+            <p>Dentist</p>
+            <p>Available Time: Sun</p>
+            <p>10:00AM - 7:00PM</p>
+          </div>
+          <div class="team-card">
+            <img
+              src="image\icon 3.png"
+              alt="Sanee Kumar"
+              height="50px"
+              width="50px"
+            />
+            <h3>Dr.Sanee Kumar</h3>
+            <p>Psychiatrist</p>
+            <p>Available Time: Mon - Fri</p>
+            <p>10:00AM - 1:00PM</p>
+          </div>
+        </div>
+      </section>
+
+      <ul id="doctor-list"></ul>
+    </div>
+
+    <!-- Appointment Booking -->
+
+    <aside class="doctor-select" id="AppointmentSchedule">
+      <h2>Book Appointment</h2>
+      <select id="doctor-select">
+        <option value="">Select option</option>
+        <option value="team-card1">General Physicians</option>
+        <option value="team-card1">Dentist</option>
+        <option value="team-card1">Psychiatrist</option>
+      </select>
+
+      <input type="datetime-local" id="appointment-time" required /><br />
+
+      <button id="book-appointment-btn">Book Appointment</button>
+    </aside>
+
+    <!--Contact-->
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#Register">Register</a></li>
+              <li><a href="#Login">Login</a></li>
+              <li><a href="#DoctorProfile">Doctor Profile</a></li>
+              <li><a href="#AppointmentSchedule">Appointment Schedule</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: contacthealinghavenclinic@gmail.com</p>
+            <p>Phone: +91 000 0000 000</p>
+            <p>Address: 123 Tech Lane, Donly City</p>
+          </div>
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <img src="image\facebook.png" alt="Facebook" width="24" />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <img src="image/twitter.png" alt="Twitter" width="24" />
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <img src="image/linkedin.png" alt="LinkedIn" width="24" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <img src="image/instagram.png" alt="Instagram" width="24" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+    </footer>
+    <p id="copy1">&copy; 2025 Healing Haven Clinic. All Rights Reserved.</p>
+  </body>
+</html>
